@@ -1,0 +1,525 @@
+
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0px;
+    background-color: rgba(0, 0, 0, 0.1);
+
+}
+
+.font-grey {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.Memestagramm-logo {
+    height: 100px;
+    width: 200px;
+}
+
+.Memestagramm-logo2 {
+    display: none;
+}
+
+.searchContainer {
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    width: 500px;
+}
+
+.inputsearch {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+}
+
+.searchImg {
+    height: 15px;
+    width: 15px;
+}
+
+.headerImg {
+    height: 40px;
+    width: 40px;
+}
+
+.profileImg {
+    height: 60px;
+    width: 60px;
+    border-radius: 32px;
+    object-fit: cover;
+}
+
+.iconContainer {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+}
+
+.postcontainer {
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.post {
+    width: 700px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    margin-bottom: 160px;
+    background-color: white;
+}
+
+
+.post-header {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    gap: 20px;
+
+}
+
+.post-icons {
+    padding-left: 20px;
+}
+
+.postImg {
+    height: 700px;
+    width: 700px;
+    object-fit: cover;
+}
+
+.post-heart-img {
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+
+}
+
+.post-heart-img:hover {
+    filter: drop-shadow(0 0 5px red);
+
+}
+
+.post-author {
+    display: flex;
+    align-items: center;
+    border-radius: 40px;
+    border: 1px solid rgb(237 44 1);
+    padding: 4px;
+}
+
+.description-section {
+
+    padding-left: 20px;
+}
+
+.comment-section {
+    padding-left: 20px;
+}
+
+.add-comment-section {
+    margin-top: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+
+}
+
+.textarea-comment {
+    border: none;
+}
+
+.comment-post {
+    text-decoration: none;
+    color: rgb(11 84 255);
+}
+
+.bg-section {
+        position: fixed;
+        top: 200px;
+        bottom: 0;
+        display: flex;
+        left: 1350px;
+    
+}
+
+
+
+.option {
+    width: 300px;
+}
+
+.option-container {
+    display: flex;
+    gap: 50px;
+    margin-top: 16px;
+}
+
+
+
+.profile-container {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+
+.profile-container-options {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-top: 16px;
+
+}
+
+.profile-options {
+    flex: 1;
+}
+
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+span {
+    flex: 1;
+}
+
+.link {
+    text-decoration: none;
+    color: rgb(11 84 255);
+    cursor: pointer;
+}
+
+.link-black {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+
+}
+
+@media(max-width: 1660px){
+    .bg-section {
+      
+        left: 1200px;
+    }
+}
+@media(max-width: 1510px){
+    .bg-section {
+      
+        left: 1100px;
+    }
+}
+@media(max-width: 1410px){
+    .bg-section {
+      
+        left: 900px;
+    }
+}
+
+@media(max-width: 1210px){
+    .bg-section {
+      
+        left: 850px;
+    }
+}
+
+@media(max-width: 1160px){
+    .bg-section {
+      
+        left: 700px;
+    }
+}
+
+@media(max-width: 990px){
+    .bg-section {
+      
+        left: 600px;
+    }
+}
+
+@media(max-width: 890px){
+    .bg-section {
+      
+        left: 500px;
+    }
+}
+
+@media(max-width: 790px){
+    .bg-section {
+      
+        left: 450px;
+    }
+}
+
+@media(max-width: 1465px) {
+    .postcontainer {
+        margin-left: 100px;
+        margin-top: 200px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: baseline;
+    }
+
+}
+
+@media(max-width: 1190px) {
+    .postcontainer {
+        margin-left: 25px;
+        margin-top: 200px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: baseline;
+
+    }
+
+    .post {
+        width: 600px;
+
+    }
+
+    .postImg {
+        height: 600px;
+        width: 600px;
+        object-fit: cover;
+    }
+
+}
+
+@media(max-width: 1090px) {
+    .post {
+        width: 500px;
+
+    }
+
+    .postImg {
+        height: 500px;
+        width: 500px;
+        object-fit: cover;
+    }
+
+    .Memestagramm-logo {
+
+        width: 150px;
+    }
+
+    .headerImg {
+        height: 30px;
+        width: 30px;
+    }
+
+    .profileImg {
+        height: 40px;
+        width: 40px;
+        object-fit: cover;
+    }
+
+    .iconContainer {
+        gap: 8px;
+    }
+
+}
+
+@media(max-width: 950px) {
+    .Memestagramm-logo2 {
+        display: block;
+        height: 100px;
+        width: 100px;
+        object-fit: contain;
+    }
+
+    .Memestagramm-logo {
+        display: none;
+    }
+}
+
+
+@media(max-width:900px) {
+    header {
+
+        justify-content: center;
+
+        gap: 8px;
+    }
+
+    .postcontainer {
+        margin-left: 8px;
+       
+
+    }
+
+    .post {
+        width: 400px;
+    }
+
+    .postImg {
+        height: 400px;
+        width: 400px;
+        object-fit: cover;
+    }
+
+    .post-heart-img {
+        height: 20px;
+        width: 20px;
+        
+    }
+
+    .post-icons {
+        padding-left: 10px;
+        display: flex;
+        align-items: center;
+    }
+    .description-section {
+        padding-left: 10px;
+    }
+
+    .add-comment-section {
+         margin-top: 0px; 
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        border-top: 1px solid rgba(0, 0, 0, 0.2);
+    }
+
+    .comment-section {
+        padding-left: 10px;
+    }
+
+    .searchContainer {
+        
+        width: 300px;
+    }
+
+    
+
+}
+
+@media(max-width:780px) {
+    .profile-container {
+        gap: 8px;
+        flex-direction: column;
+    }
+
+
+    .option-container {
+       
+        gap: 8px;
+        
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .profile-container-options {
+       
+        gap: 8px;
+        
+        flex-direction: column;
+    }
+
+
+    .profile-options {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+
+@media(max-width:670px){
+
+    .searchContainer {
+        width: 200px;
+    }
+
+    .bg-option-container {
+       
+        display: none;
+    }
+
+}
+
+@media(max-width: 570px) {
+    .headerImg {
+        height: 20px;
+        width: 20px;
+    }
+
+    .profileImg {
+        height: 30px;
+        width: 30px;
+        object-fit: cover;
+    }
+
+    .Memestagramm-logo2 {
+        display: block;
+        height: 50px;
+        width: 50px;
+        object-fit: contain;
+    }
+
+    .searchContainer {
+        width: 100px;
+        padding: 8px;
+    }
+
+    .postcontainer {
+        
+        margin-top: 100px;
+        
+    }
+
+
+}
+
+@media(max-width: 430px) {
+    .post {
+        width: 275px;
+    }
+    .postImg {
+        height: 275px;
+        width: 275px;
+        object-fit: cover;
+    }
+
+    header{
+        padding: 0px;
+        gap: 4px;
+    }
+
+    .inputsearch {
+      
+        width: 75px;
+    }
+
+    .iconContainer {
+        gap: 4px;
+    }
+
+}

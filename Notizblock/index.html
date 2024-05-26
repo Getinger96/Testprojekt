@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Notizblock</title>
+  <link rel="icon" type="image/x-icon" href="img/file-solid.svg">
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel='stylesheet' href='style.css'>
+  <script src='script.js'></script>
+</head>
+
+
+<body onload="render()">
+  <header class="header">
+    <img class="keep-icon" src="img/file-header-solid .svg" alt="">
+    <h1>Notizen</h1>
+    <section class="search-section">
+
+      <img class="search-img" src="img/search-img.svg" alt="">
+      <input type="text" name="" id="" class="search-input">
+
+    </section>
+  </header>
+
+  <section class="menu-section">
+    <div><a class="menu-link" href="index.html"><img class="file-img" src="img/file-solid.svg" alt=""></a>
+    </div>
+    <div>
+      <a class="menu-link" href="papierKorb.html"><img class="file-img" src="img/trash-solid.svg" alt=""></a>
+    </div>
+  </section>
+
+
+  <section class="input-section">
+    <div class="input-container">
+       <input id="input-titel" class="input-titel" placeholder="Titel"><textarea id="input-notice" class="input-notice"
+        placeholder="Notiz eingeben..."></textarea>
+       <div>
+         <button class="btn-notice" onclick="addNotice()">Hinzufügen</button>
+       </div>
+    </div>
+  </section>
+
+
+  <div id="content"></div>
+
+
+</body>
+
+
+</html>
